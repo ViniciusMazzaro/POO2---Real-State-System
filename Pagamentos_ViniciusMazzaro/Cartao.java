@@ -1,6 +1,5 @@
 
-//MESMO PROBLEMA DO DINHEIRO
-public class Cartao {
+public class Cartao extends Pagamento {
 
     private String nome;
     private String numero;
@@ -8,11 +7,13 @@ public class Cartao {
 
     public Cartao() {}
 
-    public Cartao(String nome, String numero, String bandeira) {
+    public Cartao(String tipoPagamento, String nome, String numero, String bandeira) {
+        super(tipoPagamento);
         this.nome = nome;
         this.numero = numero;
         this.bandeira = bandeira;
     }
+    
     public String getNome() {
         return nome;
     }

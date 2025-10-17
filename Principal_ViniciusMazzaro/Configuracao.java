@@ -10,7 +10,8 @@ public class Configuracao {
 
     public Configuracao(){}
 
-    public Configuracao() {
+    public Configuracao(String arquivoAlugueis, String arquivoVendas, String arquivoImoveis, 
+                        String arquivoClientes, String arquivoCorretores, String arquivoSeguros) {
         this.arquivoAlugueis = arquivoAlugueis;
         this.arquivoVendas = arquivoVendas;
         this.arquivoImoveis = arquivoImoveis;

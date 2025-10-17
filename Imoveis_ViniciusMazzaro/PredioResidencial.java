@@ -31,7 +31,7 @@ public class PredioResidencial extends Imovel {
 
     @Override
     public float getValorAluguel() {
-        return this.getValorAluguel() + this.valorCondominio;
+        return this.valorAluguel + this.valorCondominio;
     }
 
     @Override

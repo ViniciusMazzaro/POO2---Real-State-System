@@ -1,7 +1,8 @@
-//FALTA ARRUMAR ESSA CLASSE
+package Usuarios_ViniciusMazzaro;
+
 import java.time.LocalDate;
 
-public class Usuarioss {
+public class Usuarios {
 
     protected int codigoUsuario;
     protected String nome;
@@ -13,9 +14,10 @@ public class Usuarioss {
     protected String telefone;
     protected String email;
 
-    public Usuarioss() {}
+    public Usuarios() {}
 
-    public Usuarioss(){
+    public Usuarios(int codigoUsuario, String nome, String cpf, String rg, LocalDate dataNascimento,
+                   String endereco, String cep, String telefone, String email) {
         this.codigoUsuario = codigoUsuario;
         this.nome = nome;
         this.cpf = cpf;
@@ -90,10 +92,18 @@ public class Usuarioss {
         this.email = email;
     }
 
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "codigoUsuario=" + codigoUsuario +
+                ", nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", rg='" + rg + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", endereco='" + endereco + '\'' +
+                ", cep='" + cep + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
